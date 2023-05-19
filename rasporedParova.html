@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Raspored parova</title>
+        <link rel="icon" type="image/x-icon" href="table-tennis-equipment.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="project3.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Days One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="menu">
+                <ul>
+                    <li><a href="project3.html">Naslovna</a></li>
+                    <li><a href="vijesti.html">Vijesti</a></li>
+                    <li><a href="rasporedParova.html">Raspored parova</a></li>
+                    <!--<li><a href="rasporedZa5.html" target="_blank">Raspored za 5</a></li>-->
+                </ul>
+            </div>
+            <a href="SignIn.html">
+                <div class="button1">
+                    <h3>Sign in</h3>
+                </div>
+            </a>
+            <a href="SignUp.html">
+                <div class="button1">
+                    <h3>Sign up</h3>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="rasporedPContent">
+            <section class="rasporedP" id="rasporedP">
+                <div class="headTitle1">
+                    <h1>Unesi imena igraca</h1>
+                </div>
+                <div class="form">
+                    
+                        <input type="text" placeholder="Player1" class="name" id="player1" required><br><br>
+                        <input type="text" placeholder="Player2" class="name" id="player2" required><br><br>
+                        <input type="text" placeholder="Player3" class="name" id="player3" required><br><br>
+                        <input type="text" placeholder="Player4" class="name" id="player4" required><br><br>
+                        <input type="text" placeholder="Player5" class="name" id="player5" required><br><br>
+                        <input type="text" placeholder="Player6" class="name" id="player6" required><br><br>
+                        <a href="" class='buttonSubmit' id='do-submit'>Submit</a>
+                        <!--<button onclick="addFunction(event)" class='btn-add' id='add'>Add</button>
+                        <button class='btn-add' id='generate'>Generate</button>-->
+                        
+                    
+                </div>
+            </section>
+        </div>
+        <p>hi</p>
+        <div class="rasporedOutput">
+            
+            <h3 id = "proba09"></h3>
+            <p id="playerChange">
+                Player 1 - Player 2<br><br>
+                Player 1 - Player 3<br><br>
+                Player 1 - Player 4<br><br>
+                Player 1 - Player 5<br><br>
+                Player 1 - Player 6<br><br>
+                <br>
+                Player 2 - Player 3<br><br>
+                Player 2 - Player 4<br><br>
+                Player 2 - Player 5<br><br>
+                Player 2 - Player 6<br><br>
+                <br>
+                Player 3 - Player 4<br><br>
+                Player 3 - Player 5<br><br>
+                Player 3 - Player 6<br><br>
+                <br>
+                Player 4 - Player 5<br><br>
+                Player 4 - Player 6<br><br>
+                <br>
+                Player 5 - Player 6
+            </p><br>
+            
+
+        </div>
+        <p id = "proooba">Elida lol</p>
+
+        <script>
+            var player1;
+var player2;
+var player3;
+var player4;
+var player5;
+var player6;
+var text
+
+var btnSubmit = document.getElementById('do-submit');
+btnSubmit.onclick = function(event){
+  event.preventDefault();
+  text = document.getElementById("playerChange").innerHTML; 
+  player1 = document.getElementById("player1").value;
+  document.getElementById("proba09")=player1;
+
+  player2 = document.getElementById("player2").value;
+  player3 = document.getElementById("player3").value;
+  player4 = document.getElementById("player4").value;
+  player5 = document.getElementById("player5").value;
+  player6 = document.getElementById("player6").value;
+
+  document.body.innerHTML = document.body.innerHTML.replace("Player 1", player1);
+
+  document.getElementById("playerChange").innerHTML = text.replace("Player 1", player1);
+  document.getElementById("playerChange").innerHTML = text.replace("Player 2", player2);
+  document.getElementById("playerChange").innerHTML = text.replace("Player 3", player3);
+  document.getElementById("playerChange").innerHTML = text.replace("Player 4", player4);
+  document.getElementById("playerChange").innerHTML = text.replace("Player 5", player5);
+  document.getElementById("playerChange").innerHTML = text.replace("Player 6", player6);
+
+}
+document.body.innerHTML = document.body.innerHTML.replace("lol", "Arnaut");
+        </script>
+        <script src="script.js"></script>
+
+    </body>
+</html>

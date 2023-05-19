@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stoni Tenis</title>
+        <link rel="icon" type="image/x-icon" href="assets\table-tennis-equipment.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="project3.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Days One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        
+
+    </head>
+
+
+    <body>
+        
+        <!--<div class="progressBar"></div>-->
+
+        <!--<button onclick="trial1()">Click</button>-->
+        <!--<p id="trialP1"></p>-->
+        <!-- div for the header, where the sign in/ sign up buttens are gonna be -->
+        <div class="header">
+            <div class="menu">
+                <ul>
+                    <li><a href="project3.html">Naslovna</a></li>
+                    <li><a href="vijesti.html">Vijesti</a></li>
+                    <li><a href="rasporedParova.html">Raspored parova</a></li>
+                    <!--<li><a href="rasporedZa5.html" target="_blank">Raspored za 5</a></li>-->
+                </ul>
+            </div>
+            <a href="SignIn.html">
+                <div class="button1">
+                    <h3>Sign in</h3>
+                </div>
+            </a>
+            <a href="SignUp.html">
+                <div class="button1">
+                    <h3>Sign up</h3>
+                </div>
+            </a>
+            
+            
+        </div>
+
+        
+
+        <!-- div for the photo as a background as well as the tittle, 
+            mby put menu here to look similar to mistrals website-->
+        <div class="section1" >
+            <h1>STONI TENIS</h1>
+        </div>
+        <div class="section2" >
+            <div class="bodyContainerDiv1">
+                <div class="postCardContainer">
+                    <div class="postCard">
+                        <div class="postCard_head">
+                            <img src="assets\lennart-schneider-2Ov5_5WKaKM-unsplash.jpg" alt="Table tennis photo" class="postCard_img" width="600">
+                        </div>
+                        <div class="postCardBody">
+                            <h3>Post Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="postCard">
+                        <div class="postCard_head">
+                            <img src="assets\lennart-schneider-2Ov5_5WKaKM-unsplash.jpg" alt="Table tennis photo" class="postCard_img" width="600">
+                        </div>
+                        <div class="postCardBody">
+                            <h3>Post Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="postCard">
+                        <div class="postCard_head">
+                            <img src="assets\lennart-schneider-2Ov5_5WKaKM-unsplash.jpg" alt="Table tennis photo" class="postCard_img" width="600">
+                        </div>
+                        <div class="postCardBody">
+                            <h3>Post Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                        </div>
+                        
+                    </div>
+    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class = "countDown">
+            <h3>Trening svake nedjelje</h3><br>
+            <p id="timerOutput"></p>
+            <div id="day"></div>
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
+        </div>
+        
+        <hr>
+        <div class="footer">
+            
+            <h3>Opportunity in table tennis is to be created rather than waiting for a ready made one.</h3>
+        </div>
+        
+        <a href="project3.html">
+            <button  class="Top" id="Top" title="Go to top">
+                <img src="assets\up-arrow (1).png" alt="Top">
+            </button>
+        </a>
+
+        <script>
+            //COUNTDOWN TIMER 
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 18, 2022 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="timerOutput"
+  document.getElementById("day").innerHTML ="<br>"+days + "d ";
+  document.getElementById("hour").innerHTML =hours + "h ";
+  document.getElementById("minute").innerHTML = minutes+ "min "; 
+  document.getElementById("second").innerHTML =seconds +"s."; 
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timerOutput").innerHTML = "EXPIRED";
+    document.getElementById("day").innerHTML ='0';
+    document.getElementById("hour").innerHTML ='0';
+    document.getElementById("minute").innerHTML ='0' ; 
+    document.getElementById("second").innerHTML = '0'; 
+  }
+}, 1000);
+        </script>
+        <script src="./script.js"></script>
+    </body>
+</html>

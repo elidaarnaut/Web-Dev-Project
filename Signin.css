@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.headerSignIn {
+    display: flex;
+    /*background-color: #1b1c1e;*/
+    background: linear-gradient(to top,#1b1c1e, #101110);
+    top: 0%;
+    height: 9vh;
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+    padding-right: 15px;
+    
+}
+
+/*.homeBtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #9D0208;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeBtn:hover {
+    background-color: #88060a;
+}
+
+.header img {
+    width: 20px;
+    height: 20px;
+
+}*/
+
+body {
+    /*background-color: #101110;*/
+    background: linear-gradient(to top, #4e4f51 , #313234,#1b1c1e,#1b1c1e);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Alata', Arial, Helvetica;
+}
+
+.menu ul li a:hover {
+    color: #b7080e;
+}
+.button1 {
+    display: flex;
+    height: 35px;
+    width: 75px;
+    color: white;
+    background-color: #9D0208;
+    align-items: center;   
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Arial, Helvetica;
+}
+
+.button1:hover {
+    background-color: #88060a;
+}
+
+
+.login {
+    background: linear-gradient(135deg, #b7080e 0%,  #b96f20 100%);
+    
+    width: 30%;
+    box-shadow: 
+        0px 2px 10px rgba(20,20,20,0.3), 
+        0px 10px 20px rgba(20,20,20,0.5), 
+        0px 30px 60px 1px rgba(20, 20, 20, 0.7);
+    border-radius: 8px;
+    padding: 50px;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    
+    font-family: "Assistant", sans-serif;
+    
+}
+.loginContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 91vh;
+}
+
+.login .headTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #ebebeb;
+    padding-bottom: 30px;
+}
+.login .form input[type=email].email {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 5px;
+  }
+.login .form .email::placeholder {
+    color: #ebebeb;
+}
+.login .form input[type=text].usern {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    padding-top: 5px;
+  }
+.login .form .usern::placeholder {
+    color: #ebeaeb;
+}
+.login .form input[type=password].password {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .login .form .password::placeholder {
+    color: #ebebeb;
+  }
+
+  .login .form .btn-login {
+    background: none;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 3px;
+    padding: 7px 2em;
+    transition: 0.5s;
+    margin-top: 10px;
+  
+  }
+  /* The one below is for the sign up form because the button is on the right*/
+  .login .form .btn-login1 {
+    background: none;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 3px;
+    padding: 7px 2em;
+    transition: 0.5s;
+    margin-top: 10px;
+    float: right;
+  }
+
+  .login .form .btn-login:hover {
+    background: white;
+    color: dimgray;
+    transition: 0.5s;
+  }
+  .login .form .btn-login1:hover {
+    background: white;
+    color: dimgray;
+    transition: 0.5s;
+  }
+
+  .login .forgot {
+    text-decoration: none;
+    color: white;
+    float: right;
+  }
+
+ 
+
+
+/*
+.bodyDiv {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #88060a;
+}
+
+.formDivContect {
+    display: flex;
+    padding: 30px;
+    width: 70%;
+    height: 70%;
+    background-color: #101110;
+}
+
+form {
+    margin: 10px;
+}/*
+
